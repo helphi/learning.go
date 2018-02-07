@@ -62,3 +62,14 @@ uintptr | 同指针 | 在32位平台下为4字节，64位平台下为8字节
 - ` go run main.go ` 运行一个go程序
 - ` go run --work main.go ` 运行的时候将生成的临时文件路径打印出来
 - ` go build main.go ` 构建go程序并生成可执行文件
+
+# `golang.org/x` 无法访问问题
+
+```sh
+cd $GOPATH/src
+mkdir -p golang.org/x
+cd golang.org/x
+git clone --depth=1 https://github.com/golang/net.git net
+git clone --depth=1 https://github.com/golang/sys.git sys
+git clone --depth=1 https://github.com/golang/tools.git tools
+```
