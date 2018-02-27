@@ -72,4 +72,5 @@ cd golang.org/x
 git clone --depth=1 https://github.com/golang/net.git net
 git clone --depth=1 https://github.com/golang/sys.git sys
 git clone --depth=1 https://github.com/golang/tools.git tools
+git clone --depth=1 https://github.com/golang/crypto.git crypto
 ```
